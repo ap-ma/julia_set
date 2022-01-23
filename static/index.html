@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Julia Set</title>
+  </head>
+  <body>
+    <noscript
+      >This page contains webassembly and javascript content, please enable
+      javascript in your browser.</noscript
+    >
+    minReal: <input type="number" id="minReal" value="0.0872475" /><br>
+    maxReal: <input type="number" id="maxReal" value="0.2272475" /><br>
+    minImag: <input type="number" id="minImag" value="-0.0941" /><br>
+    maxImag: <input type="number" id="maxImag" value="0.0459" /><br>
+    cReal: <input type="number" id="cReal" value="0.38" /><br>
+    cImag: <input type="number" id="cImag" value="0.23" /><br>
+    maxCount: <input type="number" id="maxCount" value="256" /><br>
+    <button type="button" id="render_wasm" disabled>webassembly</button>
+    <button type="button" id="render_js">javascript</button>
+    <button type="button" id="clear">clear</button>
+    <div>
+      <canvas id="julia" height="1200" width="1200"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
